@@ -1,29 +1,318 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="QodeRaven — Beyond Code, Towards Tomorrow. We build intelligent digital products that help African businesses innovate, scale, and thrive." />
-    <meta name="keywords" content="QodeRaven, technology, startup, Ghana, Accra, web development, digital solutions, Africa" />
-    <title>QodeRaven — Beyond Code, Towards Tomorrow</title>
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="QodeRaven — Beyond Code, Towards Tomorrow. We build intelligent digital products that help African businesses innovate, scale, and thrive." />
+  <meta name="keywords" content="QodeRaven, technology, startup, Ghana, Accra, web development, digital solutions, Africa" />
+  <meta property="og:title" content="QodeRaven — Beyond Code, Towards Tomorrow" />
+  <meta property="og:description" content="QodeRaven builds intelligent digital products that help African businesses innovate, scale, and thrive." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>QodeRaven — Beyond Code, Towards Tomorrow</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Qode<span>Raven</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="nav-cta">Start a Project</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="hero-glow hero-glow--1"></div>
+      <div class="hero-glow hero-glow--2"></div>
+      <div class="hero-glow hero-glow--3"></div>
+    </div>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Building Africa's Digital Future
+      </div>
+      <h1>Beyond Code,<br /><span class="text-gradient">Towards Tomorrow</span></h1>
+      <p>QodeRaven builds intelligent digital products that help African businesses innovate, scale, and thrive.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary glow">Start a Project</a>
+        <a href="#services" class="btn btn-outline">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-fade"></div>
+  </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- ========== SERVICES ========== -->
+  <section class="section section--light" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">What We Do</p>
+        <h2>Our Services</h2>
+      </div>
+      <div class="services-grid">
+        <div class="card reveal">
+          <div class="card-icon card-icon--blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Web & Mobile Development</h3>
+          <p>Custom websites, mobile apps, APIs, and scalable systems.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon card-icon--blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <h3>UI/UX & Product Design</h3>
+          <p>User research, prototyping, and intuitive digital interfaces.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon card-icon--blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3>IT Consultancy</h3>
+          <p>Digital transformation, cloud migration, and system architecture.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon card-icon--blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Branding & Digital Experience</h3>
+          <p>Brand identity, design systems, and storytelling.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon card-icon--blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Cybersecurity</h3>
+          <p>Security audits, penetration testing, and data protection.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon card-icon--blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Data Analytics</h3>
+          <p>Business intelligence dashboards and predictive insights.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon card-icon--blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>SEO, social media strategy, and growth campaigns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section section--muted" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="section-label">About Us</p>
+          <h2>Technology That <span class="text-gradient">Inspires Progress</span></h2>
+          <p>QodeRaven is a Ghanaian technology startup based in Accra, founded in 2025 by five innovators. We build intelligent, scalable, and user-centered digital solutions that help businesses adopt technology and grow sustainably.</p>
+          <p>Our vision is to become Africa's leading hub for intelligent and innovative digital solutions — bridging innovation with real-world impact.</p>
+        </div>
+        <div class="about-points">
+          <div class="about-point reveal">
+            <div class="about-point-icon">📍</div>
+            <span>Ghana-based technology startup</span>
+          </div>
+          <div class="about-point reveal">
+            <div class="about-point-icon">💡</div>
+            <span>Focused on innovation in Africa</span>
+          </div>
+          <div class="about-point reveal">
+            <div class="about-point-icon">🧩</div>
+            <span>Design-driven engineering approach</span>
+          </div>
+          <div class="about-point reveal">
+            <div class="about-point-icon">⚙️</div>
+            <span>Scalable and intelligent systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Why QodeRaven</p>
+        <h2>Why Choose Us</h2>
+      </div>
+      <div class="why-grid">
+        <div class="card reveal">
+          <div class="card-icon card-icon--violet">🎨</div>
+          <h3>Design + Engineering</h3>
+          <p>We combine beautiful design with robust engineering for end-to-end excellence.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon card-icon--violet">📱</div>
+          <h3>Mobile-First Architecture</h3>
+          <p>Every solution is built mobile-first for the widest reach across Africa.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon card-icon--violet">🧠</div>
+          <h3>AI-Ready Systems</h3>
+          <p>Future-proof architectures that integrate machine learning and intelligent automation.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon card-icon--violet">☁️</div>
+          <h3>Scalable Cloud Solutions</h3>
+          <p>Cloud-native infrastructure that grows seamlessly with your business.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon card-icon--violet">🌍</div>
+          <h3>Local Expertise, Global Standards</h3>
+          <p>Deep understanding of African markets paired with world-class quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TEAM ========== -->
+  <section class="section section--muted" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Our People</p>
+        <h2>The Founding Team</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-avatar">FA</div>
+          <h3>Fred Amuzu</h3>
+          <p>CEO</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar">PA</div>
+          <h3>Prosper Nsohlebna Atiah</h3>
+          <p>Product & UI/UX Lead</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar">JA</div>
+          <h3>Justice Ayamdoo</h3>
+          <p>CTO</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar">UY</div>
+          <h3>Umusalma Yakubu</h3>
+          <p>Operations Lead</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar">EA</div>
+          <h3>Eugene Acheampong</h3>
+          <p>Marketing & Communications Lead</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS ========== -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">How We Work</p>
+        <h2>Our Process</h2>
+      </div>
+      <div class="process-timeline">
+        <div class="process-line"></div>
+        <div class="process-step reveal">
+          <div class="process-icon">🔍</div>
+          <span class="process-number">01</span>
+          <h3>Discovery</h3>
+          <p>Understanding your goals, users, and market.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-icon">✏️</div>
+          <span class="process-number">02</span>
+          <h3>Strategy & Design</h3>
+          <p>Wireframes, prototypes, and visual design.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-icon">💻</div>
+          <span class="process-number">03</span>
+          <h3>Development</h3>
+          <p>Clean, scalable code and architecture.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-icon">🧪</div>
+          <span class="process-number">04</span>
+          <h3>Testing</h3>
+          <p>Quality assurance and performance checks.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-icon">🚀</div>
+          <span class="process-number">05</span>
+          <h3>Launch & Support</h3>
+          <p>Deployment, monitoring, and ongoing care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section" id="contact">
+    <div class="cta-glow"></div>
+    <div class="container cta-content reveal">
+      <h2>Let's Build the Future <span class="text-gradient">Together</span></h2>
+      <p>Partner with QodeRaven to build scalable digital products and transform your ideas into reality.</p>
+      <a href="mailto:hello@qoderaven.com" class="btn btn-primary glow">Start a Project</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="nav-logo">Qode<span>Raven</span></h3>
+          <p>QodeRaven is a Ghanaian technology startup building intelligent, scalable, and user-centered digital solutions for businesses across Africa.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">IT Consultancy</a></li>
+            <li><a href="#services">Cybersecurity</a></li>
+            <li><a href="#services">Data Analytics</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 QodeRaven. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
