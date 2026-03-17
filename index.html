@@ -206,30 +206,42 @@
         <h2>The Founding Team</h2>
       </div>
       <div class="team-grid">
-        <div class="team-card reveal">
-          <div class="team-avatar">FA</div>
+        <div class="team-card reveal" data-name="Fred Amuzu" data-role="CEO" data-bio="Fred Amuzu is the visionary CEO of QodeRaven, driving the company's mission to build intelligent digital products for African businesses. With extensive experience in technology leadership and entrepreneurship, Fred shapes strategic direction and fosters partnerships that accelerate innovation across the continent.">
+          <img src="public/team/Fred.jpeg" alt="Fred Amuzu" class="team-avatar" loading="lazy">
           <h3>Fred Amuzu</h3>
           <p>CEO</p>
         </div>
-        <div class="team-card reveal">
-          <div class="team-avatar">PA</div>
+        <div class="team-card reveal" data-name="Prosper Nsohlebna Atiah" data-role="Product & UI/UX Lead" data-bio="Prosper Atiah leads product strategy and UI/UX design at QodeRaven. Passionate about user-centered design, Prosper crafts intuitive interfaces and oversees the product roadmap to ensure every solution delights users and drives business growth.">
+          <img src="public/team/prosper.jpeg" alt="Prosper Nsohlebna Atiah" class="team-avatar" loading="lazy">
           <h3>Prosper Nsohlebna Atiah</h3>
           <p>Product & UI/UX Lead</p>
         </div>
-        <div class="team-card reveal">
-          <div class="team-avatar">JA</div>
+        <div class="team-card reveal" data-name="Justice Ayamdoo" data-role="CTO" data-bio="Justice Ayamdoo serves as CTO, leading technical architecture and engineering excellence. With expertise in scalable systems and modern technologies, Justice ensures QodeRaven builds robust, future-proof solutions that power African innovation.">
+          <img src="public/team/Justice.jpg" alt="Justice Ayamdoo" class="team-avatar" loading="lazy">
           <h3>Justice Ayamdoo</h3>
           <p>CTO</p>
         </div>
-        <div class="team-card reveal">
-          <div class="team-avatar">UY</div>
+        <div class="team-card reveal" data-name="Umusalma Yakubu" data-role="Operations Lead" data-bio="Umusalma Yakubu manages operations and ensures seamless execution across projects. With strong organizational skills and deep understanding of African markets, Umusalma keeps QodeRaven agile and client-focused.">
+          <img src="public/team/Salma.jpeg" alt="Umusalma Yakubu" class="team-avatar" loading="lazy">
           <h3>Umusalma Yakubu</h3>
           <p>Operations Lead</p>
         </div>
-        <div class="team-card reveal">
-          <div class="team-avatar">EA</div>
+        <div class="team-card reveal" data-name="Eugene Acheampong" data-role="Marketing & Communications Lead" data-bio="Eugene Acheampong drives marketing and communications, building QodeRaven's brand across Africa. Skilled in digital strategy and storytelling, Eugene connects innovative technology with businesses ready to transform.">
+          <img src="public/team/eugene.svg" alt="Eugene Acheampong" class="team-avatar" loading="lazy">
           <h3>Eugene Acheampong</h3>
           <p>Marketing & Communications Lead</p>
+        </div>
+      </div>
+
+      <!-- Team Modal -->
+      <div class="team-modal" id="teamModal">
+        <div class="team-modal-backdrop"></div>
+        <div class="team-modal-content">
+          <button class="team-modal-close" id="teamModalClose" aria-label="Close">&times;</button>
+          <div class="team-modal-avatar"></div>
+          <h3 class="team-modal-name"></h3>
+          <p class="team-modal-role"></p>
+          <p class="team-modal-bio"></p>
         </div>
       </div>
     </div>

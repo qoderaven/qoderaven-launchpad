@@ -54,3 +54,43 @@ revealElements.forEach((el, i) => {
   }
   observer.observe(el);
 });
+
+// ========== Team Modal Functionality ==========
+const teamModal = document.getElementById('teamModal');
+const teamModalClose = document.getElementById('teamModalClose');
+const teamCards = document.querySelectorAll('.team-card');
+
+// Open modal on team card click
+teamCards.forEach(card => {
+  card.addEventListener('click', () => {
+    const avatarImg = card.querySelector('.team-avatar');
+    const name = card.dataset.name;
+    const role = card.dataset.role;
+    const bio = card.dataset.bio;
+
+    document.querySelector('.team-modal-name').textContent = name;
+    document.querySelector('.team-modal-role').textContent = role;
+    document.querySelector('.team-modal-bio').textContent = bio;
+    document.querySelector('.team-modal-avatar').src = avatarImg.src;
+    document.querySelector('.team-modal-avatar').alt = avatarImg.alt;
+
+    teamModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+// Close modal
+function closeTeamModal() {
+  teamModal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+teamModalClose.addEventListener('click', closeTeamModal);
+teamModal.querySelector('.team-modal-backdrop').addEventListener('click', closeTeamModal);
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && teamModal.classList.contains('active')) {
+    closeTeamModal();
+  }
+});

@@ -534,6 +534,17 @@ img { max-width: 100%; display: block; }
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 16px;
+  transition: transform 0.3s;
+}
+
+.team-avatar::before {
+  content: attr(data-initials);
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   background: var(--gradient);
   color: #fff;
   font-weight: 700;
@@ -541,8 +552,12 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 16px;
-  transition: transform 0.3s;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.team-card {
+  cursor: pointer;
 }
 
 .team-card:hover .team-avatar {
@@ -713,6 +728,125 @@ img { max-width: 100%; display: block; }
 .footer-bottom p {
   font-size: 0.875rem;
   color: rgba(247, 249, 252, 0.3);
+}
+
+/* ---------- Team Modal ---------- */
+.team-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.team-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.team-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 15, 25, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: fadeIn 0.3s ease;
+}
+
+.team-modal-content {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 40px;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: var(--card-shadow-hover);
+  transform: scale(0.8) translateY(20px);
+  animation: modalSlideIn 0.3s ease forwards;
+  width: 100%;
+}
+
+.team-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: color 0.2s, background 0.2s;
+}
+
+.team-modal-close:hover {
+  color: var(--text);
+  background: var(--border);
+}
+
+.team-modal-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 24px;
+}
+
+.team-modal-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-modal-role {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.team-modal-bio {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalSlideIn {
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-modal-content {
+    padding: 32px 24px;
+    margin: 0 12px;
+  }
+
+  .team-modal-avatar {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /* ---------- Responsive ---------- */
