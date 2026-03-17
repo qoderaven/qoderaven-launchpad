@@ -11,18 +11,18 @@
 }
 
 :root {
-  --primary: #0B0F19;
-  --accent: #4F7CFF;
-  --violet: #7A5CFF;
-  --bg: #F7F9FC;
-  --text: #1A1A1A;
-  --text-muted: #6B7280;
-  --border: #E5E7EB;
+  --primary: #000000;
+  --accent: #FF4C00;
+  --violet: #FF4C00;
+  --bg: #FFFFFF;
+  --text: #000000;
+  --text-muted: #666666;
+  --border: #E0E0E0;
   --card-bg: #FFFFFF;
-  --card-shadow: 0 4px 24px rgba(11, 15, 25, 0.06);
-  --card-shadow-hover: 0 8px 40px rgba(11, 15, 25, 0.12);
-  --gradient: linear-gradient(135deg, #4F7CFF, #7A5CFF);
-  --glow: 0 0 60px rgba(79, 124, 255, 0.3), 0 0 100px rgba(122, 92, 255, 0.15);
+  --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 8px 40px rgba(0, 0, 0, 0.15);
+  --gradient: linear-gradient(135deg, #FF4C00, #FF6B35);
+  --glow: 0 0 60px rgba(255, 76, 0, 0.3), 0 0 100px rgba(255, 107, 53, 0.15);
   --radius: 12px;
 }
 
@@ -540,20 +540,7 @@ img { max-width: 100%; display: block; }
 }
 
 .team-avatar::before {
-  content: attr(data-initials);
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: var(--gradient);
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
-  transition: opacity 0.2s;
+  content: '';
 }
 
 .team-card {
@@ -794,11 +781,11 @@ img { max-width: 100%; display: block; }
 }
 
 .team-modal-avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 140px;
+  height: 140px;
   margin: 0 auto 24px;
+  position: relative;
+  z-index: 10;
 }
 
 .team-modal-name {

@@ -64,15 +64,28 @@ const teamCards = document.querySelectorAll('.team-card');
 teamCards.forEach(card => {
   card.addEventListener('click', () => {
     const avatarImg = card.querySelector('.team-avatar');
+    // console.log('Card clicked:', card.dataset.name, 'src:', avatarImg.src); // Debug
     const name = card.dataset.name;
     const role = card.dataset.role;
     const bio = card.dataset.bio;
 
+    const modalAvatar = document.querySelector('.team-modal-avatar');
+    modalAvatar.innerHTML = '';
+    const img = document.createElement('img');
+    img.src = avatarImg.src;
+    img.alt = avatarImg.alt;
+    img.className = 'modal-team-img';
+    img.style.width = '140px';
+    img.style.height = '140px';
+    img.style.objectFit = 'cover';
+    img.style.borderRadius = '50%';
+    img.style.border = '5px solid white';
+    img.style.boxShadow = '0 10px 40px rgba(0,0,0,0.3)';
+    img.style.display = 'block';
+    modalAvatar.appendChild(img);
     document.querySelector('.team-modal-name').textContent = name;
     document.querySelector('.team-modal-role').textContent = role;
     document.querySelector('.team-modal-bio').textContent = bio;
-    document.querySelector('.team-modal-avatar').src = avatarImg.src;
-    document.querySelector('.team-modal-avatar').alt = avatarImg.alt;
 
     teamModal.classList.add('active');
     document.body.style.overflow = 'hidden';
